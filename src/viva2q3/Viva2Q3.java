@@ -15,14 +15,13 @@ public class Viva2Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String [] array = new String[6];
+        
        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a set of 6 numerical value:");
-       for(int i=0;i<6;i++){
-        array[i]= scanner.next();}
-    
+      String str = scanner.nextLine();
+     String [] array = str.split(",");
        boolean[] validity = isValid(array);
-        
+              
        System.out.print("{");
        for(int i=0;i<validity.length;i++){
            if (validity[i]==true){System.out.print("True");}
@@ -45,3 +44,4 @@ public class Viva2Q3 {
     }
     
 }
+
