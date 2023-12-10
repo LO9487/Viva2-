@@ -23,8 +23,6 @@ public class Viva2Q3 {
     
        boolean[] validity = isValid(array);
         
-       
-       
        System.out.print("{");
        for(int i=0;i<validity.length;i++){
            if (validity[i]==true){System.out.print("True");}
