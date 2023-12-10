@@ -8,13 +8,19 @@ package viva2q3;
  *
  * @author Lo
  */
+import java.util.*;
 public class Viva2Q3 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       String [] array ={"0","a",".","-5E7","2e+8","2e2e"};
+        String [] array = new String[6];
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a set of 6 numerical value:");
+       for(int i=0;i<6;i++){
+        array[i]= scanner.next();}
+    
        boolean[] validity = isValid(array);
         
        
