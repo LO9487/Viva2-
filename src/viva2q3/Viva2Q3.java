@@ -27,7 +27,8 @@ public class Viva2Q3 {
        
        System.out.print("{");
        for(int i=0;i<validity.length;i++){
-           System.out.print(validity[i]);
+           if (validity[i]==true){System.out.print("True");}
+           else System.out.print("False");;
            if(i==validity.length-1){break;}
            System.out.print(", ");
            }
