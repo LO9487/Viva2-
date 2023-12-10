@@ -18,7 +18,11 @@ public class Viva2Q3 {
         
        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a set of 6 numerical value:");
-      String str = scanner.nextLine();
+      String string = scanner.nextLine();      
+      String str = string.replaceAll("[\"\"]", "");
+      String s1 = str.substring(1, str.length()-1);
+        
+     String [] array = s1.split(",");
      String [] array = str.split(",");
        boolean[] validity = isValid(array);
               
