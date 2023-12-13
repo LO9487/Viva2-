@@ -23,7 +23,7 @@ public class Viva2Q3 {
       String s1 = str.substring(1, str.length()-1);
         
      String [] array = s1.split(",");
-     String [] array = str.split(",");
+    
        boolean[] validity = isValid(array);
               
        System.out.print("{");
